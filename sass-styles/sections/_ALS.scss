@@ -1,0 +1,211 @@
+@import "./../helpers";
+
+.ALS {
+  padding: 100px;
+  margin: 0;
+  align-content: center;
+  background-color: white;
+  .ALS-size {
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+
+    .cir-cont {
+      /* border: 2px solid black; */
+
+      text-align: center;
+      position: relative;
+
+      .mask-r {
+        position: absolute;
+        top: -30px;
+        right: -80px;
+        padding: 1rem;
+        width: 100%;
+        max-width: 212px;
+        height: 200px;
+      }
+      .dinny_trans {
+        position: relative;
+        .dinny-pic {
+          border-radius: 50%;
+          z-index: 5;
+          // border: 2px solid red;
+        }
+        .small-trans {
+          position: absolute;
+          top: 200px;
+          right: -50px;
+          width: 100%;
+          max-width: 170px;
+          height: 180px;
+        }
+      }
+    }
+
+    .ALS-inner {
+      /*  border: 2px solid black; */
+
+      color: #169242;
+      flex-direction: column;
+      justify-content: flex-end;
+      .pad {
+        padding-bottom: 6px;
+      }
+      .amt-detail {
+        display: flex;
+        .amt {
+          text-align: center;
+          padding: 6px 25px;
+          border-right: 0.5px solid;
+          margin-top: 6px;
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+      .btn-right {
+        @include btnStyle(#003412, #add9bd, 160px, 51px);
+      }
+    }
+  }
+}
+@media (max-width: 1260px) {
+  .ALS {
+    padding: 30px;
+  }
+}
+@media (max-width: 1088px) {
+  /* .ALS {
+    padding: 30px;
+  } */
+  .ALS .ALS-size {
+    padding: 30px 3px;
+  }
+}
+@media (max-width: 992px) {
+  /* .ALS {
+    padding: 30px;
+  } */
+  /*  .ALS .ALS-size {
+    padding: 30px 3px;
+  } */
+  .ALS .ALS-size .dinny-pic {
+    max-width: 80%;
+    height: auto;
+  }
+}
+/*
+@media (max-width: 1085px) {
+  .ALS {
+    padding: 30px 10px;
+  }
+  .ALS .ALS-size .dinny-pic {
+    max-width: 50%;
+    height: auto;
+  }
+} */
+@media (max-width: 810px) {
+  .ALS .ALS-size .dinny-pic {
+    max-width: 50%;
+    height: auto;
+  }
+  .ALS .ALS-size .ALS-inner .amt-detail {
+    justify-content: center;
+  }
+  .ALS .ALS-size .ALS-inner > h1 {
+    padding-top: 18px;
+  }
+  .ALS .ALS-size .ALS-inner .amt-detail .amt {
+    padding: 10px;
+  }
+  /*  .ALS .ALS-size .ALS-inner .para {
+    line-height: 15px;
+  } */
+}
+
+@media (max-width: 990px) {
+  .ALS .ALS-size {
+    padding: 30px 3px;
+    display: block;
+    text-align: center;
+  }
+  .ALS .ALS-size .dinny-pic {
+    max-width: 50%;
+    height: auto;
+  }
+  .ALS .ALS-size .ALS-inner .amt-detail {
+    justify-content: center;
+  }
+  .ALS .ALS-size .ALS-inner .amt-detail .amt {
+    padding: 5px;
+  }
+  /*  .ALS .ALS-size {
+    width: 70%;
+  }*/
+  .ALS .ALS-size .cir-cont {
+    width: 100%;
+  }
+  .ALS .ALS-size .cir-cont .mask-r {
+    top: -15%;
+    right: 19%;
+    padding: 1rem;
+    width: 25%;
+    max-width: none;
+    height: auto;
+  }
+  .ALS .ALS-size .cir-cont .dinny_trans .small-trans {
+    top: 50%;
+    right: 18%;
+    padding: 1rem;
+    width: 20%;
+    max-width: none;
+    height: auto;
+  }
+  @media screen and (max-width: 546px) {
+    .ALS {
+      padding: 10px;
+    }
+  }
+  @media (max-width: 400px) {
+    .ALS .ALS-size .cir-cont .mask-r {
+      top: -15%;
+      right: 3%;
+      padding: 1rem;
+      width: 45%;
+      max-width: none;
+      height: auto;
+    }
+    .ALS .ALS-size .cir-cont .dinny_trans .small-trans {
+      top: 50%;
+      right: 1%;
+      padding: 1rem;
+      width: 35%;
+      max-width: none;
+      height: auto;
+    }
+    .ALS .ALS-size .cir-cont .dinny_trans .dinny-pic {
+      max-width: 70%;
+      height: auto;
+    }
+    .ALS .ALS-size .ALS-inner .pad {
+      font-size: 30px;
+      text-align: left;
+    }
+    .ALS .ALS-size .ALS-inner .para {
+      text-align: left;
+      font-size: 15px;
+    }
+    .ALS .ALS-size .ALS-inner .amt-detail .amt > h1 {
+      font-size: 20px;
+    }
+    .ALS .ALS-size .ALS-inner .amt-detail .amt > p {
+      font-size: 14px;
+    }
+  }
+}

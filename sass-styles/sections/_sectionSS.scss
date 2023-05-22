@@ -1,0 +1,82 @@
+.SS {
+  width: 100%;
+  height: 413px;
+  background-image: url("./../../images/Testimonial\ sect.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  .txt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 139.9%;
+    color: #d6e9f7;
+    padding-bottom: 15px;
+  }
+  .imgs {
+    // border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    .space {
+      padding: 10px 30px;
+    }
+  }
+  .txt2 {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 10px;
+    color: #003412;
+
+    // border: 2px solid black;
+  }
+}
+
+/* @media screen and (max-width: 760px) {
+  .container {
+    padding: 0 3rem;
+  } */
+
+@media screen and (max-width: 598px) {
+  .SS .imgs .space {
+    padding: 10px 14px;
+  }
+  .mid {
+    padding: 10px 20px;
+  }
+  .SS {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .SS .imgs .space {
+    padding: 4px 2px;
+  }
+  .mid {
+    padding: 8px 10px;
+  }
+  .SS {
+    padding: 10px;
+  }
+  .SS .imgs .space {
+    width: 24.2%;
+    max-width: 200px;
+    height: auto;
+  }
+  .SS .imgs .space.mid {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+  }
+  .SS .txt .font {
+    font-size: 30px;
+  }
+  .SS .txt2 {
+    font-size: 15px;
+  }
+}

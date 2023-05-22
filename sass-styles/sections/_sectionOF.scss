@@ -1,0 +1,107 @@
+.our-future {
+  background-image: url("./../../images/dinny5_n\ 1.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  .bg-pic {
+    background-color: rgba(11, 151, 35, 0.842);
+    opacity: 10;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    .OF {
+      text-align: center;
+      padding: 4rem 0;
+      color: white;
+    }
+    .holder {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 2rem;
+      padding-bottom: 20px;
+      .boxx {
+        background-color: white;
+        border-radius: 0.5rem;
+        display: flex;
+        gap: 1rem;
+        padding: 18px;
+        align-items: center;
+        .circle {
+          border: 1.5px red dashed;
+          width: 90;
+          height: 90px;
+          border-radius: 80%;
+        }
+        .text {
+          color: green;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* Media queries */
+@media (max-width: 1120px) {
+  .our-future .bg-pic .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .our-future {
+    width: 100%;
+
+    background-repeat: no-repeat;
+  }
+  .our-future .bg-pic {
+    width: 100%;
+  }
+  .our-future .bg-pic .OF {
+    padding: 1rem 0;
+  }
+  .our-future .bg-pic .holder .boxx {
+    padding: 5px 18px 5px 18px;
+  }
+  .our-future .bg-pic .holder.container {
+    padding: 0 1rem;
+  }
+  .our-future .bg-pic .holder .boxx .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .our-future .bg-pic .holder .boxx {
+    width: 100%;
+    height: 25vw;
+    padding-top: 0px;
+  }
+  .our-future .bg-pic .holder .boxx .text {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  .our-future .bg-pic .holder .boxx .text {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  .our-future .bg-pic .holder .boxx .circle {
+    border: 1px red dashed;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .our-future .bg-pic .OF .font {
+    font-size: 30px;
+    text-align: center;
+  }
+  .our-future .bg-pic .OF .para {
+    font-size: 15px;
+    text-align: left;
+  }
+  .our-future .bg-pic .OF {
+    padding: 15px;
+    padding-bottom: 15px;
+  }
+}

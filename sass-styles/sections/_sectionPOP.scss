@@ -1,0 +1,126 @@
+@import "./../helpers";
+
+.pop {
+  background-color: #e9e4e4;
+  overflow: hidden;
+  // border: 2px dashed black;
+  .header-txt {
+    width: 100%;
+    /* border: 2px solid red; */
+    color: #038c33;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .sections-holder {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin: 30px 0;
+    gap: 2%;
+    .div {
+      .sections {
+        height: 471px;
+        background-color: white;
+        border-radius: 10px;
+        width: 351px;
+        height: 431;
+        padding-top: 2rem;
+        // border: 2px solid black;
+        border-radius: 5px 5px 0 0;
+        .level {
+          text-align: center;
+          .lvl-txt {
+            color: #038c33;
+            padding: 14px;
+          }
+          .pishur {
+            padding-bottom: 14px;
+          }
+          .light-txt {
+            color: rgba(0, 0, 0, 0.452);
+          }
+        }
+      }
+    }
+
+    .enroll-white {
+      height: 50px;
+      border: none;
+      position: relative;
+      display: inline-block;
+      width: 351px;
+      background-color: white;
+      border-top: 1px solid #038c33;
+      border-bottom: 5px solid #038c33;
+      text-align: center;
+      padding-top: 5px;
+      color: green;
+
+      bottom: 0px;
+      border-radius: 0px 0px 5px 5px;
+      transition-duration: 0.4s;
+
+      cursor: pointer;
+      &:hover {
+        background-color: #038c33;
+        color: white;
+        .white {
+          display: inline-block;
+        }
+      }
+
+      .white {
+        display: none;
+        // background-color: red;
+        position: absolute;
+        top: 45%;
+        right: 38%;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    .btn-left {
+      @include btnStyle(white, #003412, 194px, 51px);
+    }
+  }
+}
+
+/* Media queries */
+@media (max-width: 1135px) {
+  .pop .sections-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pop {
+    padding: 10px;
+  }
+  .pop .sections-holder .div .sections {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 810px) {
+  .pop .sections-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pop {
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .pop .sections-holder .div .sections,
+  .pop .sections-holder .enroll-white {
+    width: 250px;
+  }
+  .pop .header-txt > h1 {
+    font-size: 30px;
+  }
+  .pop .header-txt > p {
+    font-size: 15px;
+  }
+}

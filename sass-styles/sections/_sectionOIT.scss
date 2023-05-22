@@ -1,0 +1,172 @@
+@import "./../helpers";
+
+@mixin obj() {
+  .obj-holder {
+    padding-left: 20px;
+    // border: 2px solid black;
+    .butn {
+      border: none;
+      width: 95px;
+      height: 29px;
+      color: green;
+      background: #add9bd;
+      border-radius: 3.33px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .text1 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      padding: 9px 0;
+    }
+    .text2 {
+      font-weight: 400;
+      font-size: 14.4px;
+      line-height: 17px;
+      color: #ffffff;
+    }
+  }
+}
+
+.OIT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(143, 191, 38, 0.08);
+  .txt-h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 139.9%;
+    color: #038c33;
+    padding: 20px;
+  }
+  .txt-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #6c757d;
+    padding: 0 30px 10px 30px;
+  }
+  .pics {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 2rem;
+    // height: 440px;
+    padding: 0;
+    // border: 2px solid green;
+    .pic-holder1 {
+      background-image: url("./../../images/christina-wocintechchat-com-3ok_-Wvny2Q-unsplash\ 1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 351px;
+      height: 471px;
+      display: flex;
+      align-items: end;
+
+      border-radius: 10px;
+      .linear-grad {
+        background-image: linear-gradient(rgba(0, 128, 0, 0.041), green);
+        width: 351px;
+        height: 150px;
+        display: flex;
+        border-radius: 10px;
+
+        @include obj();
+      }
+    }
+    .pic-holder2 {
+      background-image: url("./../../images/trust-tru-katsande-SRdK0SQjasE-unsplash\ 1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 351px;
+      height: 471px;
+      display: flex;
+      align-items: end;
+      border-radius: 10px;
+      .linear-grad {
+        background-image: linear-gradient(rgba(0, 128, 0, 0.041), green);
+        width: 351px;
+        height: 150px;
+        display: flex;
+        border-radius: 10px;
+
+        @include obj();
+      }
+    }
+    .pic-holder3 {
+      background-image: url("./../../images/Rectangle\ 89.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 351px;
+      height: 471px;
+      display: flex;
+      align-items: end;
+      border-radius: 10px;
+      .linear-grad {
+        background-image: linear-gradient(rgba(0, 128, 0, 0.041), green);
+        width: 351px;
+        height: 150px;
+        display: flex;
+        border-radius: 10px;
+
+        @include obj();
+      }
+    }
+  }
+  .see {
+    font-size: 14px;
+    margin: 40px;
+    @include btnStyle(green, #add9bd, 127px, 51px);
+    width: 127px;
+    height: 51px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .OIT .pics {
+    // display: block;
+    flex-direction: column;
+    align-items: center;
+    // border: 2px solid black;
+    gap: 0.9rem;
+    // overflow: hidden;
+  }
+  .OIT .txt-h1 {
+    text-align: center;
+  }
+  .OIT .txt-p {
+    text-align: justify;
+  }
+  /* .obj-holder,
+  .pic-holder1 {
+    border: 2px solid red;
+  } */
+}
+@media screen and (max-width: 400px) {
+  .OIT .pics .pic-holder1,
+  .OIT .pics .pic-holder2,
+  .OIT .pics .pic-holder3 {
+    border: 2px solid red;
+    width: 90%;
+    max-width: 360px;
+    height: 100vw;
+  }
+  .OIT .pics .pic-holder2 .obj-holder .text1,
+  .OIT .pics .pic-holder2 .obj-holder .text2 {
+    font-size: 4.5vw;
+  }
+  .OIT .pics .pic-holder1 .obj-holder .text1,
+  .OIT .pics .pic-holder1 .obj-holder .text2 {
+    font-size: 4.5vw;
+  }
+  .OIT .pics .pic-holder3 .obj-holder .text1,
+  .OIT .pics .pic-holder3 .obj-holder .text2 {
+    font-size: 4.5vw;
+  }
+}

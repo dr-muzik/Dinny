@@ -1,0 +1,91 @@
+@import "./../helpers";
+
+.unique {
+  width: 100%;
+  height: 568px;
+  background-position: center;
+  background-image: url("./../../images/smiley.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+  .unique-inner {
+    color: green;
+    width: 100%;
+    height: max-content;
+    .txt {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 139.9%;
+      padding-bottom: 15px;
+    }
+    .txt3 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .dual-btn {
+      margin-top: 30px;
+      .btn-right {
+        @include btnStyle(#003412, #add9bd, 134px, 51px);
+      }
+      .btn-left {
+        margin-right: 22px;
+        @include btnStyle(white, #003412, 160px, 51px);
+      }
+    }
+  }
+  .blur {
+    width: 100%;
+    background: rgba(0, 52, 18, 0.35);
+    backdrop-filter: blur(16.5px);
+    height: 77px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .unique-inner {
+    /*    display: block; */
+    padding-top: 30px;
+  }
+  .unique {
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+  }
+  .blur {
+    width: 50%;
+    height: 0px;
+  }
+  .unique .unique-inner.container {
+    padding: 0 6rem 0 4rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .unique .unique-inner .txt {
+    padding-top: 30px;
+    color: green;
+    font-weight: 780;
+    font-size: 34px;
+    line-height: 115.9%;
+  }
+  .unique {
+    background-color: White;
+    background-image: none;
+  }
+  .unique-inner {
+    display: block;
+    // text-align: center;
+    padding-top: 400px;
+  }
+  .unique .unique-inner.container {
+    padding: 0 1rem;
+  }
+  .dual-btn {
+    display: flex;
+    gap: 1rem;
+  }
+}

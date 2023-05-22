@@ -1,0 +1,66 @@
+@import "./../helpers";
+
+.contact {
+  // border: 2px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  .cont {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 139.9%;
+    color: #038c33;
+    padding-bottom: 50px;
+  }
+  .grid {
+    /*  border: 2px solid red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    // grid-template-rows: auto auto auto auto;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    .box {
+      border: 2px solid gray;
+      padding: 5px 10px 0 16px;
+      // width: 30rem;
+      border-radius: 0;
+    }
+    .message {
+      border: 2px solid gray;
+      /*    width: 61rem;*/
+      height: 10rem;
+      grid-area: 3/1 / span 2 / span 2;
+      padding: 5px 10px 0 16px;
+    }
+  }
+  .send {
+    @include btnStyle(green, #add9bd, 149px, 51px);
+
+    margin: 2rem 0 4rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact .sticky-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .contact .grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .contact .grid.container {
+    padding: 0 2rem;
+  }
+  .contact .grid .message {
+    height: 10rem;
+  }
+}

@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* removing default settings e.g margin, padding, etc... */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 100%;
+
+  padding: 0 6rem;
+}
+header {
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+  padding: 0.52rem;
+  background-color: #038c33;
+  border-radius: 0.25rem;
+  border-style: none;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+}
+.inner > .left {
+  display: flex;
+  gap: 2rem;
+}
+.inner > .right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* navbar style */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #003412;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.ul-pattern {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.ul-pattern > li {
+  float: left;
+}
+.ul-pattern > li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  align-items: center;
+}
+li a:hover {
+  color: gold;
+}
+li a:active {
+  color: red;
+}
+
+/* MAIN */
+.unique {
+  width: 100%;
+  height: 568px;
+  background-position: center;
+  background-image: url("./dinny project/smiley.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+.unique-inner {
+  color: green;
+  width: 100%;
+  height: max-content;
+}
+.txt {
+  font-size: 3rem;
+}
+/* .dual-btn {
+  display: flex;
+  justify-content: unset;
+} */
+.btn-left {
+  width: 134px;
+  height: 51px;
+  border-radius: 5px;
+  background-color: #003412;
+  color: white;
+  border-style: none;
+  margin-right: 1rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-right {
+  width: 164px;
+  height: 51px;
+  border-radius: 5px;
+  background-color: #add9bd;
+  color: #003412;
+  border-style: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #038c33;
+  color: white;
+}
+.blur {
+  width: 100%;
+  background: rgba(26, 41, 10, 0.842);
+  backdrop-filter: blur(5px);
+  height: 77px;
+}
+
+/* SECTION 2 */
+.ALS {
+  padding: 100px;
+  margin: 0;
+  align-content: center;
+  background-color: white;
+}
+.ALS-size {
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.dinny-pic {
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px;
+}
+.ALS-inner {
+  color: #169242;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.amt-detail {
+  display: flex;
+}
+.amt {
+  text-align: center;
+  padding: 10px 30px;
+  border-right: 2px solid;
+}
+
+/* SECTION - our Future */
+.our-future {
+  background-image: url("./dinny project/dinny5_n\ 1.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.bg-pic {
+  background-color: rgba(11, 151, 35, 0.842);
+  width: 100%;
+  height: 640px;
+}
+.OF {
+  text-align: center;
+  padding: 4rem 0;
+  color: white;
+}
+.holder {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+.boxx {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 18px;
+  align-items: center;
+}
+.circle {
+  border: 5px red dotted;
+  width: 90;
+  height: 90px;
+  border-radius: 80%;
+}
+.text {
+  color: green;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* SECTION: Find our more... */
+.FOMA {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 0;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+.bg-pic-container {
+  background-image: url("./dinny project/dinny6_n.png");
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 0px 10px; /* background-color: green; */
+  width: 690px;
+  height: 520px;
+}
+.transparent {
+  border-radius: 0px 0px 0px 10px;
+  width: 690px;
+  height: 456px;
+  background-color: rgba(26, 41, 10, 0.63);
+  position: relative;
+}
+.transparent > .img {
+  position: absolute;
+  top: 233px;
+}
+.main-container {
+  padding-left: 10px;
+  color: rgb(16, 104, 42);
+  line-height: 24px;
+  align-items: center;
+}
+.list {
+  list-style-type: none;
+}
+
+/* SECTION: Popular Classe */
+.pop {
+  background-color: #8a8a8a;
+}
+.header-txt {
+  color: #038c33;
+  text-align: center;
+  padding-top: 60px;
+}
+.sections-holder {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 2%;
+}
+.sections {
+  height: 471px;
+  background-color: white;
+  border-radius: 10px;
+  width: 351px;
+  height: 431;
+  padding-top: 2rem;
+
+  border-radius: 30px 30px 0 0;
+}
+.level {
+  /* display: grid; */
+  text-align: center;
+}
+/* .enroll {
+  height: 50px;
+  width: inherit;
+  background-color: #038c33;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 30px 30px;
+} */
+.enroll-white {
+  height: 50px;
+  width: 352.8px;
+  background-color: white;
+  border-top: 3px solid #038c33;
+  border-bottom: 5px solid #038c33;
+  text-align: center;
+  padding-top: 5px;
+  color: green;
+
+  bottom: 0px;
+  border-radius: 0px 0px 30px 30px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/* make white arrow visible later */
+.enroll-white:hover {
+  background-color: #038c33;
+  color: white;
+}
+.white {
+  position: absolute;
+  bottom: 16.5px;
+  left: 203.2px;
+  /* display: block; */
+  visibility: hidden;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.lvl-txt {
+  color: #038c33;
+  padding: 14px;
+}
+.pishur {
+  padding-bottom: 14px;
+}
+.light-txt {
+  color: rgba(0, 0, 0, 0.452);
+}
+
+/* SECTION: Find out How... */
+.FOH {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FOH > .header-txt {
+  padding-bottom: 70px;
+}
+.bckg-pic {
+  background-image: url("./dinny project/bbygirl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trans {
+  background-color: rgba(11, 151, 34, 0.425);
+
+  /* position: relative; */
+  width: 100%;
+  height: 500px;
+
+  padding-top: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caicu {
+  border-radius: 50%;
+  background: linear-gradient(white);
+  background-color: white;
+  opacity: 0.7;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  position: relative;
+  bottom: 100px;
+}
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-circle-l {
+  position: absolute;
+  bottom: 90px;
+  left: -120px;
+}
+.grp-circle-r {
+  position: absolute;
+  top: -90px;
+  right: -120px;
+}
+
+/* Success Stories */
+.SS {
+  width: 100%;
+  height: 413px;
+  background-image: url("./dinny project/Testimonial\ sect.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+.SS > .txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 139.9%;
+  color: #d6e9f7;
+  padding-bottom: 30px;
+}
+/* .imgs {
+  width: 500px;
+  background-color: #f9fcfe;
+  display: inline-block;
+  align-content: space-between;
+  gap: 2rem;
+} */
+.space {
+  padding: 10px 30px;
+}
+.txt2 {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+  text-align: center;
+  padding-top: 20px;
+  color: #003412;
+}
+
+/* SECTION: our instructors & teacher */
+.OIT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(143, 191, 38, 0.08);
+}
+.txt-h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 139.9%;
+  color: #038c33;
+  padding: 20px;
+}
+.txt-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6c757d;
+  padding-bottom: 30px;
+}
+.pics {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  height: 440px;
+  padding: 0;
+}
+.pic-holder1 {
+  background-image: url("./dinny project/christina-wocintechchat-com-3ok_-Wvny2Q-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  width: 351px;
+  height: 471px;
+  position: relative;
+  border-radius: 10px;
+}
+.pic-holder2 {
+  background-image: url("./dinny project/trust-tru-katsande-SRdK0SQjasE-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  width: 351px;
+  height: 471px;
+  position: relative;
+  border-radius: 10px;
+}
+.pic-holder3 {
+  background-image: url("./dinny project/Rectangle\ 89.png");
+  background-repeat: no-repeat;
+  width: 351px;
+  height: 471px;
+  position: relative;
+  border-radius: 10px;
+}
+.obj-holder {
+  position: absolute;
+  bottom: 150px;
+  padding-left: 20px;
+}
+.butn {
+  width: 95px;
+  height: 29px;
+  color: green;
+  background: #add9bd;
+  border-radius: 3.33px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.butn:hover,
+.see:hover,
+.send:hover {
+  background-color: #038c33;
+  color: white;
+}
+.text1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 9px 0;
+}
+.text2 {
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.see {
+  width: 127px;
+  height: 51px;
+  color: green;
+  background: #add9bd;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+/* SECTION: Contact us */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.cont {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 139.9%;
+  color: #038c33;
+  padding-bottom: 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.box {
+  border: 2px solid black;
+  width: 30rem;
+  border-radius: 0;
+}
+.message {
+  border: 2px solid black;
+  width: 61rem;
+  height: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  padding: 10px 10px 0 16px;
+}
+.send {
+  width: 149px;
+  height: 51px;
+  border-radius: 5px;
+  color: green;
+  background: #add9bd;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+/* FOOTER */
+.foot {
+  background-color: #003412;
+  height: 500px;
+  padding-top: 5rem;
+  position: relative;
+}
+.foot-divs {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-big {
+  padding-bottom: 20px;
+}
+.about {
+  color: white;
+}
+.lastP {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3333px;
+  line-height: 170.9%;
+  color: white;
+}
+.lit {
+  list-style-type: none;
+  line-height: 40px;
+}
+.h {
+  padding-bottom: 30px;
+}
+
+.p {
+  position: absolute;
+  bottom: 0px;
+  left: 400px;
+  border-top: 2px solid white;
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+}
+.email-search {
+  display: flex;
+  margin-bottom: 9px;
+}
+.email {
+  width: 12rem;
+  padding: 15px;
+  border-radius: 5px 0 0 5px;
+  margin-top: 10px;
+  background-color: white;
+  color: gray;
+}
+.search {
+  width: 3rem;
+  padding: 15px;
+  border-radius: 0 5px 5px 0;
+  margin-top: 10px;
+  background: #038c33;
+}
+
+/* screen responsiveness */
+@media (max-width: 1260px) {
+  .unique {
+    width: 100%;
+    height: 568px;
+    background-position: center;
+
+    background-attachment: fixed;
+    background-position: left;
+  }
+}
+
+@media (max-width: 1204px) {
+  .ALS {
+    padding: 30px;
+  }
+}
+@media (max-width: 464px) {
+}
+@media (max-width: 1204px) {
+  .ALS {
+    padding: 30px;
+  }
+}
+@media (max-width: 1085px) {
+  .ALS {
+    padding: 30px 10px;
+  }
+  .dinny-pic {
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 810px) {
+  .ALS-size {
+    padding: 30px 3px;
+
+    text-align: center;
+  }
+  .dinny-pic {
+    max-width: 40%;
+    height: auto;
+  }
+  .amt-detail {
+    justify-content: center;
+  }
+  .ALS-inner > h1 {
+    padding-top: 18px;
+  }
+  .amt {
+    padding: 10px;
+  }
+}
+@media (max-width: 614px) {
+  .ALS-size {
+    padding: 30px 3px;
+    display: block;
+    text-align: center;
+  }
+  .dinny-pic {
+    max-width: 50%;
+    height: auto;
+  }
+  .amt-detail {
+    justify-content: center;
+  }
+  .amt {
+    padding: 5px;
+  }
+}
+
+/* our features */
+@media (max-width: 1120px) {
+  .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .our-future {
+    width: 100%;
+
+    background-repeat: no-repeat;
+  }
+  .bg-pic {
+    width: 100%;
+  }
+  .OF {
+    padding: 1rem 0;
+  }
+  .boxx {
+    padding: 5px 18px 5px 18px;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .circle {
+    border: 5px red dotted;
+    border-radius: 80%;
+  }
+}
+/* Find out more */
+@media (max-width: 1256px) {
+  .main-container {
+    padding-left: 10%;
+  }
+}
+@media (max-width: 810px) {
+  .FOMA {
+    display: grid;
+    padding: 0 40px;
+  }
+  .main-container {
+    width: 100%;
+    display: grid;
+    padding: 0;
+  }
+  .bg-pic-container {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/*  */
+@media (max-width: 1135px) {
+  .sections-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*  .enroll-white {
+    width: inherit;
+  } */
+  .pop {
+    padding: 10px;
+  }
+  .sections {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 810px) {
+  .sections-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*  .enroll-white {
+    width: inherit;
+  } */
+  .pop {
+    padding: 10px;
+  }
+}
+
+/* find out how */
+@media (max-width: 951px) {
+  .bckg-pic,
+  .trans {
+    width: 100%;
+    max-width: 700px;
+  }
+}
